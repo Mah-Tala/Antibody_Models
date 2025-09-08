@@ -1,0 +1,19 @@
+cat > .gitignore <<'EOF'
+# Python
+__pycache__/
+*.pyc
+
+# Envs & caches
+.env/
+.venv/
+.ipynb_checkpoints/
+logs*/
+*.log
+
+# Large artifacts (weights live on HF Hub)
+*.safetensors
+*.bin
+ESM*/**/model-*.safetensors
+ESM*/**/pytorch_model*.bin
+ESM*/**/tf_model*.h5
+EOF
