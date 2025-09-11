@@ -30,4 +30,3 @@ python utils/load_model_paired_ESMC.py
 
 ### Notes
 - Weights are not stored in this GitHub repo. They are pulled from the Hub at runtime.
-- To switch the model to public, toggle visibility on the Hugging Face model page later.
