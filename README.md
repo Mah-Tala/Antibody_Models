@@ -16,10 +16,15 @@ conda activate py310_protein_ab
 huggingface-cli login
 ```
 ```bash
-### Usage (Embeddings)
-python utils/load_model.py
+### Usage (ESM2)
+python utils/load_model_unpaired_ESM2.py
 # prints: Embedding shape: (1, H)
 ```
+```bash
+### Usage (ESMC)
+python utils/load_model_paired_ESMC.py
+```
+
 > The script loads EsmModel (no pooling), tokenizes a sample heavy chain,
 > runs a forward pass, and mean-pools token embeddings to one vector.
 
