@@ -20,13 +20,16 @@ huggingface-cli login
 python utils/load_model_unpaired_ESM2.py
 # prints: Embedding shape: (1, H)
 ```
+> The script loads EsmModel (no pooling), tokenizes a sample heavy chain,
+> runs a forward pass, and mean-pools token embeddings to one vector.
+
+
 ```bash
 ### Usage (ESMC)
 python utils/load_model_paired_ESMC.py
 ```
 
-> The script loads EsmModel (no pooling), tokenizes a sample heavy chain,
-> runs a forward pass, and mean-pools token embeddings to one vector.
+
 
 ### Notes
 - Weights are not stored in this GitHub repo. They are pulled from the Hub at runtime.
