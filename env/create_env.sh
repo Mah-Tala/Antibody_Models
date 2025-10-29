@@ -25,5 +25,5 @@ pip install "huggingface_hub>=0.24"
 pip install hf-transfer
 pip install esm
 
-# (You had deepspeed; not needed for loading/embeddings. Skip for simplicity.)
+
 echo "✅ Environment ready. Run: huggingface-cli login  (if your model is private)"
