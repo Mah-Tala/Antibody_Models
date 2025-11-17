@@ -4,6 +4,8 @@ This repo shares **code and instructions** to use our antibody models.
 **Weights are hosted on the Hugging Face Hub** to keep this repo small.
 
 - ESM2 (Unpaired) weights: **MahTala/antibody-esm2-unpaired** (private)
+- ESM2 weights: **MahTala/antibody-esm2-paired** (private)
+- ESM C weights: **MahTala/antibody-esmc-paired** (private)
 
 ## Setup
 
