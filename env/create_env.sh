@@ -26,4 +26,4 @@ pip install hf-transfer
 pip install esm
 
 
-echo "✅ Environment ready. Run: huggingface-cli login  (if your model is private)"
+echo "✅ Environment ready. Run: huggingface-cli login  (to access private models)"
