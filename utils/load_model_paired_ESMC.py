@@ -19,7 +19,7 @@ from safetensors import safe_open
 from esm.sdk.api import ESMProtein, LogitsConfig
 
 # Configuration
-REPO_ID = "MahTala/antibody-esmc-paired"  # Hugging Face repo with fine-tuned weights
+REPO_ID = "MahTala/AbCDR-ESMC"  # Hugging Face repo with fine-tuned weights
 SEP_TOKEN = "-"  # Separator between heavy and light chains
 
 def load_paired_esmc_model(repo_id=REPO_ID, device=None):
