@@ -10,17 +10,21 @@ source ~/miniconda3/bin/activate
 conda activate base
 
 # --- Create env ---
-conda create -y -n py310_protein_ab python=3.10
-conda activate py310_protein_ab
+conda create -y -n protein python=3.10
+conda activate protein
 
 # --- Core deps ---
 conda install -y -c anaconda git-lfs
 # (Optional GPU runtimes; safe to keep; CPU works fine without)
 conda install -y -c nvidia/label/cuda-12.4.0 cuda
 
+conda install pandas
+
 pip install torch               # CPU torch; replace with CUDA wheel if desired
 pip install transformers==4.44.2
 pip install accelerate==0.33.0
+pip cache remove deepspeed
+pip install deepspeed==0.14.4
 pip install "huggingface_hub>=0.24"
 pip install hf-transfer
 pip install esm==3.1.4
