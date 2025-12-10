@@ -23,7 +23,7 @@ pip install transformers==4.44.2
 pip install accelerate==0.33.0
 pip install "huggingface_hub>=0.24"
 pip install hf-transfer
-pip install esm
+pip install esm==3.1.4
 
 
 echo "✅ Environment ready. Run: huggingface-cli login  (to access private models)"
