@@ -3,7 +3,7 @@ import os, torch
 from transformers import EsmModel, AutoTokenizer
 
 # Hugging Face repo id (your private model)
-REPO_ID = "MahTala/antibody-esm2-paired"
+REPO_ID = "MahTala/AbCDR-esm2"
 
 SEP_TOKEN = "-"  # Separator between heavy and light chains
 
